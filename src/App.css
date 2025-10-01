@@ -21,6 +21,8 @@ body {
 .header {
   position: sticky;
   top: 0;
+  color: #d3d3d3;
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +37,7 @@ body {
 
 .header nav {
  font-family: 'Delius, sans-serif';
+  font-size: 1.1rem;
 } 
 
 /* Nav links */
@@ -42,6 +45,7 @@ body {
   color: #d3d3d3;      /* light grey */
   text-decoration: underline;
   font-weight: 500;
+
   transition: all 0.2s ease; /* smooth effect */
 }
 

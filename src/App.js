@@ -1,42 +1,35 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import ProjectDetail from "./pages/ProjectDetail";
+
 
 function App() {
   return (
-    <div className="app">
-      <header className="header">
-        <div className="logo">Holly Henske</div>
-        <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button className="hamburger">☰</button>
-      </header>
-
-      <main className="landing">
-        <section className="intro">
-          <h1>Digital Creator and Collaborator</h1>
-          <p>
-            I’m Holly, a Web Developer, UX Designer, and Bubble.io Developer. I
-            craft accessible and user-centered digital solutions. I'm an excellent collaborator and great listener. Let's bring your vision to life!
-          </p>
-        </section>
-
-        <section className="categories">
-          <div className="category" id="web-dev-category">
-            <span className="category-label">Web Developer</span>
-            </div>
-          <div className="category" id="ux-design-category">
-            <span className="category-label">UX Designer</span>
-            </div>
-          <div className="category" id="bubble-dev-category">
-            <span className="category-label">Bubble.io Developer</span>
-            </div>
-        </section>
-      </main>
-    </div>
+    <Router basename="/portfolio25">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Dynamic gallery */}
+        <Route path="/gallery" element={<Gallery />} />
+        {/* Dynamic project detail */}
+        <Route path="/project/:id" element={<ProjectDetail />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
+
+
 
 export default App;
