@@ -1,10 +1,21 @@
+/* Body & whole page */
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: #0a1a33; /* dark blue */
-  color: #d3d3d3; /* light grey */
+  font-family: Arial, sans-serif;
+  color: #d3d3d3; /* light grey text for accessibility */
+  min-height: 100vh;
+
+  /* Subtle metallic royal blue gradient */
+  background: linear-gradient(
+    135deg,
+    #081740 0%,   /* very dark left */
+    #0f2a70 50%,  /* middle */
+    #0c2a60 100%  /* right slightly darker than middle */
+  );
+  background-attachment: fixed;
 }
 
+/* Header */
 .header {
   position: sticky;
   top: 0;
@@ -12,13 +23,31 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #0a1a33;
-  border-bottom: 2px groove #444;
+  text-align: center;
+  /* MATCH the body gradient perfectly */
+  background: inherit;
+  background-clip: content-box; /* ensures gradient fills the header exactly */
+  z-index: 1000;
+}
+
+/* Nav links */
+.header nav a {
+  color: #d3d3d3;      /* light grey */
+  text-decoration: underline;
+  font-weight: 500;
+  transition: all 0.2s ease; /* smooth effect */
+}
+
+/* Hover effect */
+.header nav a:hover {
+  font-weight: 700;      /* bold */
+  transform: scale(1.1); /* slightly larger */
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  margin: 10px 35px;
 }
 
 .nav {
@@ -45,18 +74,101 @@ body {
   padding: 3rem 1rem;
 }
 
-.categories {
-  display: flex;
-  gap: 1rem;
+.intro {
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
+.intro p {
+  font-size: 1.2rem;
+  max-width: 75%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Categories container */
+.categories {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* allows wrapping if screen is small */
+}
+
+/* Individual category cards */
 .category {
-  flex: 1;
-  padding: 2rem;
-  background: #112244;
-  border-radius: 8px;
+  position: relative;
+  width: 255px;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* background image layer */
+.category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+
+.category-label {
+  position: relative; /* now above the ::before pseudo-element */
+  z-index: 2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect: darken & blur only the background */
+.category:hover::before {
+  filter: brightness(50%) blur(2px);
+}
+
+.category:hover .category-label {
+  opacity: 1;
+}
+
+#web-dev-category {
+  background-image: url(images/dev-app.png);
+  background-size: cover;
+}
+
+#web-dev-category::before {
+  background-image: url(images/dev-app.png);
+}
+
+#ux-design-category {
+  background-image: url(images/ux-designer.png);
+  background-size: cover;
+}
+
+#ux-design-category::before {
+  background-image: url(images/ux-designer.png);
+}
+
+#bubble-dev-category {
+  background-image: url(images/bubble-app.png);
+  background-size: cover;
+}
+
+#bubble-dev-category::before {
+  background-image: url(images/bubble-app.png);
 }
 
 /* Responsive */
@@ -69,7 +181,48 @@ body {
     display: block;
   }
 
+  .intro {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
   .categories {
     flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+   .category {
+    width: 250px;   /* horizontal rectangle */
+    height: 180px;
+  }
+
+   #web-dev-category::before {
+    background-image: url(images/dev-app-m.png);
+  }
+
+  #ux-design-category::before {
+    background-image: url(images/ux-designer-m.png);
+  }
+
+  #bubble-dev-category::before {
+    background-image: url(images/bubble-app.png);
+  }
+
+  /* Remove hover effects on mobile */
+  .category::before {
+    filter: none !important;
+  }
+
+  /* Always show labels */
+  .category-label {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    margin-top: 5.5rem;
+    margin-bottom: 1.5rem;
   }
 }
