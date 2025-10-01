@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="/" onClick={closeMenu} className="header">Holly Henske</Link>
+        Holly Henske
       </div>
       <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
         <Link to="/" onClick={closeMenu}>Home</Link>

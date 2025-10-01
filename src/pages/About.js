@@ -27,12 +27,18 @@ const About = () => {
             Bubble.io. Adept at building responsive, user-friendly interfaces and integrating APIs, dedicated to elegantly solving 
             real user problems. I love to collaborate with cross-functional teams and stakeholders!
           </p>
+          <p>I had a full career as an educator, teaching French and Spanish at the secondary level, which included arranging and
+            supervising student travel abroad. So, I bring strong communication, collaboration, and problem-solving skills to my tech work.
+            My web development journey includes completing a comprehensive coding bootcamp (LaunchCode), contract work, 2 years as a Web Developer in
+            a B2B startup, and numerous personal projects.
+          </p>
         </section>
 
         <section className="about-section">
           <h2>Ideal Roles</h2>
           <p>
-            Junior frontend-end or full-stack developer on collaborative teams that value mentorship, Remote or hybrid.
+            Junior frontend-end or full-stack developer on collaborative teams that value mentorship. 
+            Remote or hybrid (On site with some flexibility). 
             Junior digital designer roles also welcome.
           </p>
         </section>
@@ -63,6 +69,23 @@ const About = () => {
         <section className="about-section">
           <h2>Skills</h2>
           
+          <div className="skills-group">
+            <h3>Certificates</h3>
+            <ul className="accomplishments-list">
+            <li>
+                IBM Full Stack Software Developer Professional Certificate, Coursera, 2025
+            </li>
+            <li>
+                Google UX Design Specialization, Coursera, 2023
+            </li>
+            <li>
+              LaunchCode Women's+ Lift-Off Program, 2022
+            </li>
+            <li>
+              LaunchCode Women's+ frontend Web Development Bootcamp, 2022
+            </li>
+          </ul>
+        </div>
           <div className="skills-group">
             <h3>Technical Skills</h3>
             <p className="skills-list">

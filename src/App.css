@@ -19,7 +19,7 @@ body {
 
 /* Header */
 .header {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   color: #d3d3d3;
   text-decoration: none;
