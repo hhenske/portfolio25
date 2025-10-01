@@ -19,7 +19,7 @@ function App() {
           <h1>Digital Creator and Collaborator</h1>
           <p>
             I’m Holly, a Web Developer, UX Designer, and Bubble.io Developer. I
-            craft accessible and user-centered digital solutions. Excellent collaborator and great listener. Let's create bring your vision to the screen!
+            craft accessible and user-centered digital solutions. I'm an excellent collaborator and great listener. Let's bring your vision to life!
           </p>
         </section>
 

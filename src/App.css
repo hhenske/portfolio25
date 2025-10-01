@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Delius&display=swap');
+
 /* Body & whole page */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  
   color: #d3d3d3; /* light grey text for accessibility */
   min-height: 100vh;
-
+  font-family: 'Delius, sans-serif';
   /* Subtle metallic royal blue gradient */
   background: linear-gradient(
     135deg,
@@ -24,11 +26,16 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   text-align: center;
+  font-family: 'kaushan Script', cursive, sans-serif;
   /* MATCH the body gradient perfectly */
   background: inherit;
   background-clip: content-box; /* ensures gradient fills the header exactly */
   z-index: 1000;
 }
+
+.header nav {
+ font-family: 'Delius, sans-serif';
+} 
 
 /* Nav links */
 .header nav a {
@@ -71,11 +78,11 @@ body {
 /* Landing */
 .landing {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
+
 }
 
 .intro {
-  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -182,7 +189,7 @@ body {
   }
 
   .intro {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   margin-bottom: 3.5rem;
 }
 
@@ -222,7 +229,7 @@ body {
 
 @media (max-width: 768px) {
   .intro {
-    margin-top: 5.5rem;
+    /* margin-top: 5.5rem; */
     margin-bottom: 1.5rem;
   }
 }
