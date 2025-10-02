@@ -1,0 +1,109 @@
+/* Contact page styles: center content and lower heading */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  justify-content: flex-start;
+  min-height: calc(100vh - 200px); /* push content lower on the page; adjust if header/footer heights change */
+  padding-top: 50px; /* additional space from the top */
+  text-align: center;
+  /* match header/nav text color */
+  --contact-color: #d3d3d3; /* light grey used in header nav */
+  /* blue from the page background gradient to use for button text */
+  --contact-blue: #0f2a70;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  transform: translateY(5px); /* subtle lower position */
+}
+
+.contact .contact-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  font-size: 1.05rem;
+  color: var(--contact-color);
+}
+
+.contact .contact-links a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.contact .separator {
+  color: #f89191;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 520px;
+  margin: 20px;
+  border: 1px solid var(--contact-color);
+  padding: 1rem 3rem 2rem 3rem;
+  border-radius: 2px;
+  /* background: #fff; */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+/* Inputs and textarea use the border color as background */
+form input,
+form textarea {
+  background: var(--contact-color);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 0.6rem 0.75rem;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  color: #111; /* dark text for readability on light grey */
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 3px solid rgba(15,42,112,0.14); /* subtle blue focus ring */
+  border-color: var(--contact-color);
+  box-shadow: 0 6px 18px rgba(15,42,112,0.06);
+}
+
+/* Submit button styled with the same pink, white text for contrast */
+
+form button[type="submit"] {
+  background: var(--contact-color);
+  color: var(--contact-blue);
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: filter 160ms ease, transform 160ms ease;
+  margin: 5% 25%;
+}
+
+form button[type="submit"]:hover {
+  filter: brightness(0.98);
+  transform: translateY(-1px);
+}
+
+form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 80px;
+    min-height: calc(100vh - 160px);
+  }
+
+  .contact h2 {
+    font-size: 1.6rem;
+    transform: translateY(10px);
+  }
+}

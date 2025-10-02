@@ -10,13 +10,7 @@ const About = () => {
           <div className="profile-section">
             <h1 className="title">Web Developer  •  Designer</h1>
             <p className="location">St. Louis, MO</p>
-            <div className="contact-links">
-              <a href="mailto:hcover3333@gmail.com">hcover3333@gmail.com</a>
-              <span className="separator">  •  </span>
-              <a href="https://www.linkedin.com/in/hollyhenske" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-              </a>
-            </div>
+            
           </div>
         </header>
 
