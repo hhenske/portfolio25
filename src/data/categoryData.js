@@ -1,29 +1,61 @@
-// Import your images here
+// Import images
 // Example: import webDev1 from '../images/web-dev-1.jpg';
+import bpAccounting from '../images/bp-accounting-apps.png';
+import bpAddress from '../images/bp-address.png';
+import bubbleApp from '../images/bubble-app.png';
+import demoMovie from '../images/demo-movie.png';
+import fitness from '../images/fitness.png';
+import ipAddress from '../images/ip-address.png';
+import uxDesigner from '../images/ux-designer.png';
+import uxDesignerM from '../images/ux-designer-m.png';
+import worldVite from '../images/world-vite.png';
+import newpost from '../images/newpost.png';
+import coming from '../images/coming-soon.png'; 
+import petstore from '../images/swagger-petstore.png';
+import teaCozy from '../images/tea-cozy.png';
+import workoutCoach from '../images/workout-coach.png';
+import deployed from '../images/deployed_loggedin.png';
+import eBikes from '../images/ecommerce-bikes.png';
+import eSneakers from '../images/ecommerce-sneakers.png';
+import filtering from '../images/filtering.png';
+import financial from '../images/financial-literacy.png';
+import ipMobile from '../images/ip-mobile.png';
+import logoDesigns from '../images/logo-designs.png';
+import medical from '../images/medical-route.png';
+import portfolio from '../images/personal-portfolio.png';
+import petDesigns from '../images/pet-designs.png';
+import recipe from '../images/recipe-mockups.png';
+import shopping from '../images/shopping.png';
+import stickerSheet from '../images/sticker-sheet.png';
+import swaggerPetstore from '../images/swagger-petstore.png';
+import taskTracker from '../images/TT2.png';
+import wireframes from '../images/wireframes.png';
+
+
 
 export const categoryData = {
   "web-developer": {
     title: "Web Developer",
     carouselItems: [
       {
-        image: "/images/web-dev-carousel-1.jpg", // Update with your actual image paths
-        caption: "Responsive Web Applications",
-        description: "Building modern, responsive web applications using React, JavaScript, and CSS that work seamlessly across all devices."
+        image: ipAddress,
+        caption: "IP Address Search",
+        description: "FrontendMentor challenge project with search functionality and API integration."
       },
       {
-        image: "/images/web-dev-carousel-2.jpg",
-        caption: "API Integration",
-        description: "Integrating third-party APIs and services to create dynamic, data-driven applications that provide real value to users."
+        image: deployed,
+        caption: "Full-Stack Car Dealership Site",
+        description: "Full-stack IBM Capstone project with user authentication, CRUD operations, and Docker deployment."
       },
       {
-        image: "/images/web-dev-carousel-3.jpg",
-        caption: "Performance Optimization",
-        description: "Optimizing web applications for speed and performance, ensuring fast load times and smooth user experiences."
+        image: eSneakers,
+        caption: "FrontendMentor E-commerce Site",
+        description: "E-commerce product page with image gallery, lightbox, and cart functionality."
       },
       {
-        image: "/images/web-dev-carousel-4.jpg",
-        caption: "Cross-Browser Compatibility",
-        description: "Ensuring consistent functionality and appearance across different browsers and platforms for maximum reach."
+        image: "workoutCoach",
+        caption: "Workout Coach React App",
+        description: "LaunchCode capstone project using React, featuring dynamic user interaction and API-driven content."
       }
     ],
     collageImages: [
@@ -68,7 +100,7 @@ export const categoryData = {
       { src: "/images/ux-collage-6.jpg", alt: "UX design project 6" }
     ]
   },
-  "bubble-developer": {
+  "bubble-io-developer": {
     title: "Bubble.io Developer",
     carouselItems: [
       {
