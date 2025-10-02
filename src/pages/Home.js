@@ -1,6 +1,7 @@
  
- import React from "react";
- import "../App.css";
+import React from "react";
+import "../App.css";
+import { Link } from 'react-router-dom';
  
  const Home = () => {
      // If you need route params later, add useParams back and ensure Navbar is inside a Router
@@ -13,21 +14,22 @@
                     craft accessible and user-centered digital solutions. I'm an excellent collaborator and great listener. Let's bring your vision to life!
                 </p>
                 </section>
-
+                <h4 className="click-below">Click below to see samples of my work</h4>
                 <section className="categories">
-                    <div className="category" id="web-dev-category">
+                    
+                    <Link className="category" to="/category/web-developer" id="web-dev-category">
                         <span className="category-label">Web Developer</span>
-                    </div>
-                    <div className="category" id="ux-design-category">
+                    </Link>
+                    <Link className="category" to="/category/ux-designer" id="ux-design-category">
                         <span className="category-label">UX Designer</span>
-                    </div>
-                    <div className="category" id="bubble-dev-category">
+                    </Link>
+                    <Link className="category" to="/category/bubble-io-developer" id="bubble-dev-category">
                         <span className="category-label">Bubble.io Developer</span>
-                    </div>
+                    </Link>
                 </section>
             </main>
          );
         }
 
-        
+
         export default Home;

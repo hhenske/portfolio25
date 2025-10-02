@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import ProjectDetail from "./pages/ProjectDetail";
+import CategoryPage from "./pages/CategoryPage";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         {/* Dynamic gallery */}
         <Route path="/gallery" element={<Gallery />} />
+  <Route path="/category/:slug" element={<CategoryPage />} />
         {/* Dynamic project detail */}
         <Route path="/project/:id" element={<ProjectDetail />} />
       </Routes>

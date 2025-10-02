@@ -71,6 +71,15 @@ body {
   color: #d3d3d3;
 }
 
+/* small helper to align a heading with the categories container */
+.click-below {
+  max-width: 1000px;
+  margin: 1.25rem auto 0; /* center with the categories container */
+  padding: 0 1rem;
+  text-align: left;
+  color: #d3d3d3;
+}
+
 .hamburger {
   display: none;
   font-size: 1.5rem;
@@ -87,7 +96,7 @@ body {
 }
 
 .intro {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .intro p {
@@ -97,13 +106,16 @@ body {
   line-height: 1.6;
 }
 
+
 /* Categories container */
 .categories {
   display: flex;
   gap: 3rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem auto 3rem;
   flex-wrap: wrap; /* allows wrapping if screen is small */
+  max-width: 1000px; /* keeps the row width stable so headings can align */
+  padding: 0 1rem;
 }
 
 /* Individual category cards */
@@ -201,6 +213,7 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    max-width: 420px; /* match mobile card width for snug layout */
   }
 
    .category {
