@@ -9,7 +9,7 @@ import ipAddress from '../images/ip-address.png';
 import uxDesigner from '../images/ux-designer.png';
 import uxDesignerM from '../images/ux-designer-m.png';
 import worldVite from '../images/world-vite.png';
-import newpost from '../images/newpost.png';
+import newPost from '../images/newpost.png';
 import coming from '../images/coming-soon.png'; 
 import petstore from '../images/swagger-petstore.png';
 import teaCozy from '../images/tea-cozy.png';
@@ -30,7 +30,8 @@ import stickerSheet from '../images/sticker-sheet.png';
 import swaggerPetstore from '../images/swagger-petstore.png';
 import taskTracker from '../images/TT2.png';
 import wireframes from '../images/wireframes.png';
-
+import worldViteReact from '../images/WorldViteReact.png';
+import aboutUs from '../images/about-us.png';
 
 
 export const categoryData = {
@@ -59,44 +60,44 @@ export const categoryData = {
       }
     ],
     collageImages: [
-      { src: "/images/web-dev-collage-1.jpg", alt: "Web development project 1" },
-      { src: "/images/web-dev-collage-2.jpg", alt: "Web development project 2" },
-      { src: "/images/web-dev-collage-3.jpg", alt: "Web development project 3" },
-      { src: "/images/web-dev-collage-4.jpg", alt: "Web development project 4" },
-      { src: "/images/web-dev-collage-5.jpg", alt: "Web development project 5" },
-      { src: "/images/web-dev-collage-6.jpg", alt: "Web development project 6" }
+      { src: worldViteReact, alt: "Web development project: Where in the World" },
+      { src: teaCozy, alt: "Web development project: Tea Cozy" },
+      { src: newPost, alt: "Full stack project" },
+      { src: aboutUs, alt: "Full stack project About us static page" },
+      { src: ipMobile, alt: "IP Address search app" },
+      { src: swaggerPetstore, alt: "Full stack project stagger image" }
     ]
   },
   "ux-designer": {
     title: "UX Designer",
     carouselItems: [
       {
-        image: "/images/ux-carousel-1.jpg",
-        caption: "User Research & Analysis",
-        description: "Conducting thorough user research to understand needs, behaviors, and pain points for creating intuitive designs."
+        image: petDesigns,
+        caption: "Bring-Me-Home Pet Adoption",
+        description: "Designed ideation, wireframes, and prototypes for a pet adoption app for Google UX Design Specialization course."
       },
       {
-        image: "/images/ux-carousel-2.jpg",
-        caption: "Wireframing & Prototyping",
-        description: "Creating detailed wireframes and interactive prototypes to visualize and test user flows before development."
+        image: recipe,
+        caption: "Mockups for Italian Recipe App",
+        description: "Created for Google UX Design Specialization course focusing on user-friendly recipe app."
       },
       {
-        image: "/images/ux-carousel-3.jpg",
-        caption: "Usability Testing",
-        description: "Testing designs with real users to identify issues and iterate for optimal user experience and satisfaction."
+        image: financial,
+        caption: "Financial Literacy App",
+        description: "User stories, research, testing for Google UX Design Specialization Social Good project."
       },
       {
-        image: "/images/ux-carousel-4.jpg",
-        caption: "Accessible Design",
-        description: "Designing with accessibility in mind to ensure all users can navigate and enjoy the digital experience."
+        image: uxDesigner,
+        caption: "Political Candidate Site Design",
+        description: "Created designs for a political candidate's campaign"
       }
     ],
     collageImages: [
-      { src: "/images/ux-collage-1.jpg", alt: "UX design project 1" },
-      { src: "/images/ux-collage-2.jpg", alt: "UX design project 2" },
-      { src: "/images/ux-collage-3.jpg", alt: "UX design project 3" },
-      { src: "/images/ux-collage-4.jpg", alt: "UX design project 4" },
-      { src: "/images/ux-collage-5.jpg", alt: "UX design project 5" },
+      { src: stickerSheet, alt: "First sticker sheet done in Google UX course" },
+      { src: wireframes, alt: "Image of wireframing" },
+      { src: logoDesigns, alt: "Examples of some logo designs created on Canva" },
+      { src: taskTracker, alt: "Task tracker project created with Bubble.io" },
+      { src: fitness, alt: "Fitness app design" },
       { src: "/images/ux-collage-6.jpg", alt: "UX design project 6" }
     ]
   },
