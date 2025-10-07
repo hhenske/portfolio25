@@ -29,15 +29,6 @@ const About = () => {
         </section>
 
         <section className="about-section">
-          <h2>Ideal Roles</h2>
-          <p>
-            Junior frontend-end or full-stack developer on collaborative teams that value mentorship. 
-            Remote or hybrid (On site with some flexibility). 
-            Junior digital designer roles also welcome.
-          </p>
-        </section>
-
-        <section className="about-section">
           <h2>Accomplishments</h2>
           <ul className="accomplishments-list">
             <li>
@@ -58,6 +49,15 @@ const About = () => {
             documents in team knowledge base, improving team efficiency.
             </li>
           </ul>
+        </section>
+
+        <section className="about-section">
+          <h2>Ideal Roles</h2>
+          <p>
+            Junior frontend-end or full-stack developer on collaborative teams that value mentorship. 
+            Remote or hybrid (On site with some flexibility). 
+            Junior digital designer roles also welcome.
+          </p>
         </section>
 
         <section className="about-section">
