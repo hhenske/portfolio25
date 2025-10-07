@@ -1,13 +1,44 @@
 {
   "files": {
-    "main.css": "/portfolio25/static/css/main.a0cb63cf.css",
-    "main.js": "/portfolio25/static/js/main.0fc641af.js",
+    "main.css": "/portfolio25/static/css/main.92b9c9de.css",
+    "main.js": "/portfolio25/static/js/main.79ddf8fd.js",
+    "static/media/demo-movie.png": "/portfolio25/static/media/demo-movie.9237ac363ea6fc90d542.png",
+    "static/media/ip-address-large.png": "/portfolio25/static/media/ip-address-large.4ac3352784f48ff7b041.png",
+    "static/media/dev-app-m.png": "/portfolio25/static/media/dev-app-m.9dec6d84ab05d4a7ab3a.png",
+    "static/media/deployed_loggedin.png": "/portfolio25/static/media/deployed_loggedin.0d438ea2d1a35442505c.png",
+    "static/media/bp-accounting-apps.png": "/portfolio25/static/media/bp-accounting-apps.b2dfdd1308cc54c402f1.png",
+    "static/media/recipe-mockups.png": "/portfolio25/static/media/recipe-mockups.fb4dc0653c0f2f725d6c.png",
+    "static/media/tea-cozy.png": "/portfolio25/static/media/tea-cozy.71e70307ef6e15a94027.png",
+    "static/media/ux-designer.png": "/portfolio25/static/media/ux-designer.b2e4ed6300f3b530c9ad.png",
+    "static/media/ecommerce-sneakers.png": "/portfolio25/static/media/ecommerce-sneakers.120dcdbadceb2411da85.png",
+    "static/media/personal-portfolio.png": "/portfolio25/static/media/personal-portfolio.86bd521d5b472245c0af.png",
+    "static/media/fitness.png": "/portfolio25/static/media/fitness.8054a68ee394f8eb7901.png",
+    "static/media/logo-designs.png": "/portfolio25/static/media/logo-designs.164e83747a23bb70a58c.png",
+    "static/media/about_us.png": "/portfolio25/static/media/about_us.10958250fec1a17c6690.png",
+    "static/media/dev-app.png": "/portfolio25/static/media/dev-app.7e20b8a0fa81bfaac81b.png",
+    "static/media/ip-mobile.png": "/portfolio25/static/media/ip-mobile.7e20b8a0fa81bfaac81b.png",
+    "static/media/swagger-petstore.png": "/portfolio25/static/media/swagger-petstore.a2d3356dc6fe09d8ec8c.png",
+    "static/media/medical-route.png": "/portfolio25/static/media/medical-route.1ee648fdb0eb7bb5c2cb.png",
+    "static/media/ecommerc-bikes.png": "/portfolio25/static/media/ecommerc-bikes.c8dd2d3b67ba3c50dead.png",
+    "static/media/shopping.png": "/portfolio25/static/media/shopping.a79d179b93c9aeea18eb.png",
+    "static/media/pet-design.png": "/portfolio25/static/media/pet-design.c81981026a6da991b68c.png",
+    "static/media/ux-designer-m.png": "/portfolio25/static/media/ux-designer-m.742e61a4ebbfdc4f6d9d.png",
+    "static/media/bp-address.png": "/portfolio25/static/media/bp-address.d6b8569d78eea45b3b92.png",
+    "static/media/financial-literacy.png": "/portfolio25/static/media/financial-literacy.26cdffbffb98dde39a25.png",
+    "static/media/WorldViteReact.png": "/portfolio25/static/media/WorldViteReact.4ae1a3f46f39820574a3.png",
+    "static/media/TT2.png": "/portfolio25/static/media/TT2.a87f8c834ad2c30e4796.png",
+    "static/media/workout-coach.png": "/portfolio25/static/media/workout-coach.675b0686e9e755f5492b.png",
+    "static/media/wireframes.png": "/portfolio25/static/media/wireframes.946ea8103acc8e973834.png",
+    "static/media/sticker-sheet.png": "/portfolio25/static/media/sticker-sheet.050b635c50f33b3754ee.png",
+    "static/media/bubble-app.png": "/portfolio25/static/media/bubble-app.fbdd9362b500dc33bb6d.png",
+    "static/media/new-post.png": "/portfolio25/static/media/new-post.679fd423d4ee5e51dadf.png",
+    "static/media/filtering.png": "/portfolio25/static/media/filtering.be90f2930c3cb9be847b.png",
     "index.html": "/portfolio25/index.html",
-    "main.a0cb63cf.css.map": "/portfolio25/static/css/main.a0cb63cf.css.map",
-    "main.0fc641af.js.map": "/portfolio25/static/js/main.0fc641af.js.map"
+    "main.92b9c9de.css.map": "/portfolio25/static/css/main.92b9c9de.css.map",
+    "main.79ddf8fd.js.map": "/portfolio25/static/js/main.79ddf8fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0cb63cf.css",
-    "static/js/main.0fc641af.js"
+    "static/css/main.92b9c9de.css",
+    "static/js/main.79ddf8fd.js"
   ]
 }
