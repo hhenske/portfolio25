@@ -91,23 +91,6 @@ const CategoryCard = ({ category, carouselItems, collageImages }) => {
           ))}
         </div>
       </section>
-
-      <section className="collage-section">
-        <div className="collage-grid">
-          {collageImages.map((img, index) => (
-            <div 
-              key={index} 
-              className={`collage-item collage-item-${index + 1}`}
-            >
-              <img 
-                src={img.src} 
-                alt={img.alt}
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   );
 };

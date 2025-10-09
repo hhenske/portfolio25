@@ -85,9 +85,6 @@ export const categoryData = {
         caption: "Backend to a Petstore app",
         description: "In the IBM FUll-Stack course, I learned a lot, including what a swagger is. I gained experience working in a CLI, scripting, and performing operations without a front-end. I will always prefer interacting with a front-end, but the background knowledge is great to have."
       }
-    ],
-    collageImages: [
-     
     ]
   },
   "ux-designer": {
@@ -143,9 +140,6 @@ export const categoryData = {
         caption: "Shopping app, Mobile first",
         description: "Experimentation with designing mobile first."
       }
-    ],
-    collageImages: [
-
     ]
   },
   "bubble-io-developer": {
@@ -196,9 +190,6 @@ export const categoryData = {
         caption: "Mobile design",
         description: "Learning to use Bubble's new mobile editor to create a grocery list app"
       }
-    ],
-    collageImages: [
-      
     ]
   }
 };
