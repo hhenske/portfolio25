@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
             <section className="intro">
                 <h1>Digital Creator and Collaborator</h1>
                 <p>
-                    I’m Holly, a Web Developer, UX Designer, and Bubble.io Developer. I
-                    craft accessible and user-centered digital solutions. I'm an excellent collaborator and great listener. Let's bring your vision to life!
+                    I’m Holly, Web Developer, UX Designer, and Bubble.io Developer. I
+                    craft user-centered, responsive digital solutions. I'm an excellent collaborator and great listener. Let's bring your vision to life!
                 </p>
                 </section>
                 <h4 className="click-below">Click below to see samples of my work</h4>

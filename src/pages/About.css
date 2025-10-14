@@ -52,6 +52,23 @@ h1 {
   line-height: 1.8;
 }
 
+#certificates-list {
+  text-align: center;
+  background-color: #f89191;
+  color: #091e7c;
+  font-weight: 800;
+  padding: 0.5px 10px 10px 10px;
+}
+
+#certificates-list h3 {
+  color: #091e7c;
+  font-size: 1.8rem;
+}
+
+#certificates-list ul {
+  list-style: none;
+}
+
 @media (max-width: 768px) {
   .about-container {
     padding: 1rem;

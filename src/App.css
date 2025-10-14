@@ -194,6 +194,29 @@ body {
   background-image: url(images/bubble-app.png);
 }
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus,
+.skip-link:active {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: .5rem 1rem;
+  background: var(--contact-blue, #0f2a70);
+  color: #fff;
+  z-index: 1000;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav {

@@ -15,20 +15,23 @@ import Category from "./pages/Category";
 
 function App() {
   return (
-    <Router basename="/portfolio25">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* Dynamic gallery */}
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/category/:category" element={<Category />} />
-        {/* Dynamic project detail */}
-        <Route path="/project/:id" element={<ProjectDetail />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <>
+      <a href="#main-content" className="skip-link">Skip to content</a>
+      <Router basename="/portfolio25">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Dynamic gallery */}
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/category/:category" element={<Category />} />
+          {/* Dynamic project detail */}
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

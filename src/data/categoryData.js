@@ -6,15 +6,12 @@ import demoMovie from '../images/demo-movie.png';
 import fitness from '../images/fitness.png';
 import ipAddress from '../images/ip-address-large.png';
 import uxDesigner from '../images/ux-designer.png';
-import uxDesignerM from '../images/ux-designer-m.png';
 import newPost from '../images/new-post.png';
-import petstore from '../images/swagger-petstore.png';
 import teaCozy from '../images/tea-cozy.png';
 import workoutCoach from '../images/workout-coach.png';
 import deployed from '../images/deployed_loggedin.png';
 import eBikes from '../images/ecommerc-bikes.png';
 import eSneakers from '../images/ecommerce-sneakers.png';
-import filtering from '../images/filtering.png';
 import financial from '../images/financial-literacy.png';
 import ipMobile from '../images/ip-mobile.png';
 import logoDesigns from '../images/logo-designs.png';
@@ -52,7 +49,7 @@ export const categoryData = {
       },
       {
         image: workoutCoach,
-        caption: "Workout Coach React App",
+        caption: "Workout Coach(React)", 
         description: "LaunchCode capstone project using React, featuring dynamic user interaction and API-driven content."
       },
       {

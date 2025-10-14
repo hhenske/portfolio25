@@ -1,26 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../App.css";
 import "./Contact.css";
 import { useNavigate } from "react-router-dom";
 
-// Formspree endpoint provided by user
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mldpnnop";
 
 const Contact = () => {
-  const [status, setStatus] = useState(null); // null | "sending" | "success" | "error"
+  const [submitStatus, setSubmitStatus] = useState(null); // null | "sending" | "success" | "error"
+  const statusRef = useRef(null);
+  const redirectTimerRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    let t;
-    if (status === "success") {
-      t = setTimeout(() => navigate("/"), 3000);
+    if (submitStatus === "success" && statusRef.current) {
+      statusRef.current.focus();
+      redirectTimerRef.current = setTimeout(() => {
+        navigate("/");
+      }, 3000);
     }
-    return () => clearTimeout(t);
-  }, [status, navigate]);
+    return () => {
+      if (redirectTimerRef.current) {
+        clearTimeout(redirectTimerRef.current);
+      }
+    };
+  }, [submitStatus, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("sending");
+    setSubmitStatus("sending");
 
     const form = e.target;
     const formData = new FormData(form);
@@ -33,55 +40,54 @@ const Contact = () => {
       });
 
       if (res.ok) {
-        setStatus("success");
-        form.reset();
+        setSubmitStatus("success");
       } else {
-        setStatus("error");
+        setSubmitStatus("error");
       }
     } catch (err) {
       console.error(err);
-      setStatus("error");
+      setSubmitStatus("error");
     }
   };
 
   return (
-    <main className="contact">
-      <h2>Contact</h2>
+    <main className="contact" id="main-content">
+      <h2 tabIndex={-1}>Contact</h2>
 
-      <div className="contact-links">
-        <a href="mailto:hcover3333@gmail.com">hcover3333@gmail.com</a>
-        <span className="separator" aria-hidden="true">  •  </span>
-        <a href="https://www.linkedin.com/in/hollyhenske" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
-      </div>
-
-      {status === "success" ? (
-        <div className="form-status success">
-          <h3>Thanks — your message was sent.</h3>
-          <p>Redirecting to the homepage…</p>
+      {submitStatus === "success" ? (
+        <div
+          role="status"
+          aria-live="polite"
+          tabIndex={-1}
+          ref={statusRef}
+          className="contact-success"
+        >
+          Thank you — your message was sent. You will be redirected shortly.
         </div>
       ) : (
-        <form className="contact-form" onSubmit={handleSubmit} noValidate>
-          <h2>Send a message</h2>
+        <form onSubmit={handleSubmit} noValidate aria-describedby="form-help">
+          <div id="form-help" className="sr-only">
+            All fields are required.
+          </div>
+
           <label htmlFor="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" />
+          <input id="name" name="name" required aria-required="true" />
 
           <label htmlFor="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <input id="email" name="email" type="email" required aria-required="true" />
 
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="How can I help?" required />
+          <textarea id="message" name="message" required aria-required="true"></textarea>
 
-          <button type="submit" disabled={status === "sending"}>
-            {status === "sending" ? "Sending…" : "Send"}
+          <button type="submit" aria-label="Send message" disabled={submitStatus === "sending"}>
+            {submitStatus === "sending" ? "Sending…" : "Send"}
           </button>
 
-          {status === "error" && <div className="form-status error">Sorry — there was a problem. Please try again later.</div>}
+          <div role="status" aria-live="polite" className="sr-only" id="submit-status">
+            {submitStatus === "sending" ? "Sending…" : submitStatus === "error" ? "Error sending form" : ""}
+          </div>
         </form>
       )}
-
-      
     </main>
   );
 };

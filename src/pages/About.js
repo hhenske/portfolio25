@@ -63,7 +63,7 @@ const About = () => {
         <section className="about-section">
           <h2>Skills</h2>
           
-          <div className="skills-group">
+          <div className="skills-group" id="certificates-list">
             <h3>Certificates</h3>
             <ul className="accomplishments-list">
             <li>
@@ -71,6 +71,8 @@ const About = () => {
             </li>
             <li>
                 Google UX Design Specialization, Coursera, 2023
+            </li>
+            <li>Bubble Intensive Certificate of Completion, Momentum Academy, 2023
             </li>
             <li>
               LaunchCode Women's+ Lift-Off Program, 2022
@@ -83,26 +85,21 @@ const About = () => {
           <div className="skills-group">
             <h3>Technical Skills</h3>
             <p className="skills-list">
-              JavaScript, React (with hooks), HTML5, CSS3, Bootstrap, Material UI, Bubble.io (responsive design,
-              workflows, data handling), API integration & testing, Python, SQL (MySQL), version control (Git, Bubble), DevTools
-              debugging, component-based design, cross-browser compatibility, mobile responsiveness.
+             JavaScript, React (with hooks), HTML5, CSS3, Bootstrap, Material UI, Bubble.io (responsive design, workflows, data handling), API integration & testing, Python, SQL (MySQL), version control (Git, Bubble), DevTools debugging, component-based design, cross-browser compatibility, mobile responsiveness, cloud computing, Docker, Kubernetes, Service-based architecture, manual and automated testing, wireframing, prototyping, Ai prompting
             </p>
           </div>
 
           <div className="skills-group">
             <h3>Tools & Platforms</h3>
             <p className="skills-list">
-              GitHub, Bubble.io, YouTube, Clickup, Google Suite, Excel, Figma, Adobe XD, Copilot, WordPress, CRM platforms.
-              AI-assisted development (ChatGPT, Copilot), prompt engineering and iterative AI tools for rapid prototyping and
-              debugging.
+              GitHub, Bubble.io, YouTrack, Clickup, Google Suite, Excel, Figma, Adobe XD, CRM platforms. AI-assisted development (ChatGPT, Claude, Copilot), prompt engineering and iterative AI tools for rapid prototyping and debugging, SalesForce, Postman, Google Dev Tools, Command line and CLI
             </p>
           </div>
 
           <div className="skills-group">
             <h3>Soft Skills</h3>
             <p className="skills-list">
-              Clear communicator, self-motivated learner, adaptable team player, experienced in collaboration, documentation, and
-              continuous improvement.
+              Clear, concise communication, Avid continuous learning, Persistence, Resilience, Problem solving, Adaptability, Collaboration, Documentation, Integrity, Prioritization, Intrinsically motivated
             </p>
           </div>
         </section>
